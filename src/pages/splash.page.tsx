@@ -21,13 +21,15 @@ export default function Splash() {
 
     return (
         <AppWrapper>
-            <StyledHeader className='text-center my-5'>Buy Me Coffee</StyledHeader>
+            <div className='lg:px-24'>
+                <StyledHeader className='text-center my-5'>Buy Me Coffee</StyledHeader>
 
-            <AdWrapper className="h-96"></AdWrapper>
+                <AdWrapper className="h-96"></AdWrapper>
 
-            <Button className="my-5" onClick={() => navigate('/onboarding')}>
-                Continue
-            </Button>
+                <Button className="my-5" onClick={() => navigate('onboarding')}>
+                    Continue
+                </Button>
+            </div>
         </AppWrapper>
     )
 }

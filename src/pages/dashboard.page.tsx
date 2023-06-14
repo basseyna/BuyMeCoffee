@@ -59,7 +59,7 @@ export default function Dashboard() {
                 <div className="flex justify-center">
 
                     <div className="lg:w-200ha w-full">
-                        <Button className="mt-10 ">Logout</Button>
+                        <Button className="mt-10">Logout</Button>
                     </div>
 
                 </div>

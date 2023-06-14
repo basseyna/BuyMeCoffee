@@ -43,7 +43,7 @@ export default function Onboarding() {
                         <Input type="password" placeholder='Transaction Passkey'/>
 
 
-                        <Button className="mt-8" onClick={() => navigate('/dash-board')}>Create Account</Button>
+                        <Button className="mt-8" onClick={() => navigate('/home')}>Create Account</Button>
                     </form>
                 </div>
             </div>
