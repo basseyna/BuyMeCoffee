@@ -99,7 +99,7 @@ export default function SendGift() {
                                 <p className="text-7xl">☕️</p>
 
                                 <div className="w-full flex flex-col gap-y-5 px-5">
-                                    <div className="buttons-group flex gap-x-3">
+                                    <div className="buttons-group flex gap-x-3 lg:self-center">
                                         <Quantity type='button' selected={isSelected(1)} onClick={() => setNewGiftQuantity(1)}>
                                             1
                                         </Quantity>
