@@ -27,7 +27,7 @@ const StyledSelect = styled.select<SelectStyleProps>`
 interface InputStyleProps {
     bg?: string;
     borderColor?: string;
-    height?: string;
+    cheight?: string;
     padding?: string;
 }
 

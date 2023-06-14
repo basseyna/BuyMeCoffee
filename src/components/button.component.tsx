@@ -27,7 +27,7 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<'button'>, ButtonSt
 
 
 
-export default function Button({ children, ...otherProps }: ButtonProps, ref: any) {
+export default function Button({ children, ...otherProps }: ButtonProps) {
     return (
         <StyledButton {...otherProps}>
             {children}

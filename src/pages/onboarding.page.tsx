@@ -1,6 +1,5 @@
 import { AppWrapper, Navbar, Input, Button } from '../components';
 import styled from 'styled-components';
-import { useForm } from 'react-hook-form';
 import { Select } from '../components/Input.component';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,11 +9,11 @@ const StyledHeader = styled.h2<{ size?: string, weight?: number }>`
     font-weight: ${props => props.weight || 600 };
 `
 
-interface AccountCreation {
-    bank: string;
-    accountNumber: string;
-    accountName: string;
-}
+// interface AccountCreation {
+//     bank: string;
+//     accountNumber: string;
+//     accountName: string;
+// }
 
 export default function Onboarding() {
     const navigate = useNavigate();
