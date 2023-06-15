@@ -5,6 +5,8 @@ import Send from "../assets/icons/send.icon";
 import Withdraw from "../assets/icons/withdraw.icon";
 import { AppWrapper, Button  } from "../components"
 import styled from 'styled-components';
+import useMicrosoftTeamsContext from "../hooks/useMicrosoftTeamsContext";
+import * as msTeams from '@microsoft/teams-js';
 
 const StyledHeader = styled.h2<{ size?: string, weight?: number }>`
     font-size: ${props => props.size || '24px'};
@@ -19,6 +21,7 @@ const Balance = styled.div`
 
 export default function Dashboard() {
     const navigate = useNavigate();
+    const { context }: { context: msTeams.app.Context | undefined } = useMicrosoftTeamsContext();
     return (
         <AppWrapper>
             <div className="lg:px-24">
@@ -28,7 +31,7 @@ export default function Dashboard() {
 
                     <div className="flex flex-col mt-2">
                         <StyledHeader size={'12px'} weight={400}>Good Morning</StyledHeader>
-                        <StyledHeader size={'20px'}>Bassey A. Akan</StyledHeader>
+                        <StyledHeader size={'20px'}>{context?.user?.displayName || 'Ha-Shem User'}</StyledHeader>
                     </div>
                 </div>
                 <div className="mt-5 lg:flex lg:justify-center">
