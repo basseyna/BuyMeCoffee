@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import * as msTeams from '@microsoft/teams-js';
 
 export default function useMicrosoftTeamsContext()  {
