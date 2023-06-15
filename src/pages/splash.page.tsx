@@ -26,7 +26,7 @@ export default function Splash() {
 
                 <AdWrapper className="h-96"></AdWrapper>
 
-                <Button className="my-5" onClick={() => navigate('onboarding')}>
+                <Button className="my-5" onClick={() => navigate('/onboarding')}>
                     Continue
                 </Button>
             </div>
