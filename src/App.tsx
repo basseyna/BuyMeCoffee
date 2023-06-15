@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter, BrowserRouter, Route } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, Navigate } from "react-router-dom";
 import { Dashboard, Onboarding, Splash } from './pages';
 import FundAccount from "./pages/fund.page";
 import WithdrawFunds from "./pages/withdraw.page";
@@ -6,17 +6,22 @@ import SendGift from "./pages/send-gift.page";
 
 const router  = createBrowserRouter([
   {
-    path: '',
+    path: '/',
     element: <Splash />,
-  },
-  {
-    path: '/onboarding',
-    element: <Onboarding />
   },
   {
     path: '/home',
     element: <Dashboard />
   },
+  {
+    path: '/',
+     element: <Navigate to="home"/>
+  },
+  {
+    path: '/onboarding',
+    element: <Onboarding />
+  },
+  
   {
     path: '/fund',
     element: <FundAccount />
