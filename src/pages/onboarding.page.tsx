@@ -2,6 +2,7 @@ import { AppWrapper, Navbar, Input, Button } from '../components';
 import styled from 'styled-components';
 import { Select } from '../components/Input.component';
 import { useNavigate } from 'react-router-dom';
+import AD from '../assets/coffee-logo.png';
 
 const StyledHeader = styled.h2<{ size?: string, weight?: number }>`
     font-size: ${props => props.size || '24px'};
@@ -23,7 +24,9 @@ export default function Onboarding() {
             
             <h1 className='hidden lg:block mt-6 text-center font-semibold text-2xl'>Buy Me Coffee</h1>
             <div className="block lg:flex lg:mt-10 lg:gap-x-10">
-                <div className='bg-ha-shem-gray-200 w-100ha hidden lg:block'></div>
+                <div className='w-100ha hidden lg:block pt-16 pl-10'>
+                    <img src={AD} alt="ad" className="object-fill h-96" />
+                </div>
                 <div className="page-title lg:w-100ha white lg:bg-ha-shem-gray-100 lg:p-20">
                     <StyledHeader className='mt-5'>
                         Create your Account
